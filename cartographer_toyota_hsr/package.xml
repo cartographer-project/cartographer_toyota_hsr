@@ -34,4 +34,5 @@
 
   <depend>cartographer_ros</depend>
   <depend>message_runtime</depend>
+  <depend>roscpp</depend>
 </package>

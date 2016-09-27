@@ -18,7 +18,6 @@ project(cartographer_toyota_hsr)
 
 set(PACKAGE_DEPENDENCIES
   roscpp
-  sensor_msgs
 )
 
 set(CMAKE_CXX_FLAGS "-pthread -std=c++11 -Wreorder")
