@@ -24,8 +24,8 @@ source /ros_entrypoint.sh
 # Create a new workspace in 'catkin_ws'.
 mkdir catkin_ws
 cd catkin_ws
-catkin_init_workspace
-mkdir src
+wstool init src
+
 mv ../cartographer_toyota_hsr src
 
 # Install rosdep dependencies.
