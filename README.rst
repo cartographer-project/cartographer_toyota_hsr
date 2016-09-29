@@ -31,6 +31,14 @@ repository provides Cartographer SLAM for the `Toyota HSR`_ via
 .. _SLAM: https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping
 .. _Toyota HSR: http://www.toyota-global.com/innovation/partner_robot/family_2.html
 
+Documentation
+=============
+
+You will find complete documentation for using Cartographer with ROS at `our
+Read the Docs site`_.
+
+.. _our Read the Docs site: https://google-cartographer-ros-for-the-toyota-hsr.readthedocs.io/
+
 Contributing
 ============
 

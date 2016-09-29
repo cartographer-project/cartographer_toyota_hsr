@@ -56,8 +56,19 @@ using `Ninja <https://ninja-build.org>`_.
 
     # Install deb dependencies.
     rosdep update
-    rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+    rosdep install --from-paths src --ignore-src -r --rosdistro=${ROS_DISTRO} -y
 
     # Build and install.
     catkin_make_isolated --install --use-ninja
     source install_isolated/setup.bash
+
+Running the demo
+================
+
+Once you've completed setup, do the following::
+
+  # Get an HSR .bag file.
+  wget -P ~/Downloads https://s3-us-west-1.amazonaws.com/cartographer-hsr/cartographer_hsr_example.bag
+  # Run the demo. This will start rviz and play the bag file automatically.
+  roslaunch cartographer_toyota_hsr hsr_demo.launch bag_filename:=${HOME}/Downloads/cartographer_hsr_example.bag
+
