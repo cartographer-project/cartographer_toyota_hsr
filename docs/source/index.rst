@@ -65,10 +65,16 @@ using `Ninja <https://ninja-build.org>`_.
 Running the demo
 ================
 
-Once you've completed setup, do the following::
+Now that Cartographer and Cartographer's Toyota HSR integration are installed,
+download the example bag to a known location, in this case ``~/Downloads``, and
+use ``roslaunch`` to bring up the demo:
 
-  # Get an HSR .bag file.
-  wget -P ~/Downloads https://s3-us-west-1.amazonaws.com/cartographer-hsr/cartographer_hsr_example.bag
-  # Run the demo. This will start rviz and play the bag file automatically.
-  roslaunch cartographer_toyota_hsr hsr_demo.launch bag_filename:=${HOME}/Downloads/cartographer_hsr_example.bag
+  .. code-block:: bash
 
+    # Download the example bag.
+    wget -P ~/Downloads https://s3-us-west-1.amazonaws.com/cartographer-hsr/cartographer_hsr_example.bag
+
+    # Launch the demo.
+    roslaunch cartographer_toyota_hsr demo_hsr.launch bag_filename:=${HOME}/Downloads/cartographer_hsr_example.bag
+
+The launch files will bring up ``roscore`` and ``rviz`` automatically.
