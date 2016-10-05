@@ -255,7 +255,7 @@ man_pages = [
 texinfo_documents = [
     ('index', 'CartographerToyotaHSR', u'Cartographer ROS for the Toyota HSR Documentation',
      u'The Cartographer Authors', 'Cartographer ROS for the Toyota HSR',
-     'Provides ROS integration for Cartographer.', 'Miscellaneous'),
+     'Provides Toyota HSR integration for Cartographer ROS.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
