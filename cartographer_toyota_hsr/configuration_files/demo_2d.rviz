@@ -1,3 +1,17 @@
+# Copyright 2016 The Cartographer Authors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 Panels:
   - Class: rviz/Displays
     Help Height: 78
@@ -8,7 +22,7 @@ Panels:
         - /PointCloud21
         - /Image1
       Splitter Ratio: 0.600671
-    Tree Height: 255
+    Tree Height: 838
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -53,107 +67,107 @@ Visualization Manager:
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
         arm_flex_link:
-          Value: true
+          Value: false
         arm_lift_link:
-          Value: true
+          Value: false
         arm_roll_link:
-          Value: true
+          Value: false
         base_footprint:
-          Value: true
+          Value: false
         base_footprint_wheel:
-          Value: true
+          Value: false
         base_imu_frame:
-          Value: true
+          Value: false
         base_l_drive_wheel_link:
-          Value: true
+          Value: false
         base_l_passive_wheel_x_frame:
-          Value: true
+          Value: false
         base_l_passive_wheel_y_frame:
-          Value: true
+          Value: false
         base_l_passive_wheel_z_link:
-          Value: true
+          Value: false
         base_link:
           Value: true
         base_r_drive_wheel_link:
-          Value: true
+          Value: false
         base_r_passive_wheel_x_frame:
-          Value: true
+          Value: false
         base_r_passive_wheel_y_frame:
-          Value: true
+          Value: false
         base_r_passive_wheel_z_link:
-          Value: true
+          Value: false
         base_range_sensor_link:
-          Value: true
+          Value: false
         base_roll_link:
-          Value: true
+          Value: false
         copy_head_rgbd_sensor_depth_frame:
-          Value: true
+          Value: false
         hand_camera_frame:
-          Value: true
+          Value: false
         hand_camera_gazebo_frame:
-          Value: true
+          Value: false
         hand_l_distal_link:
-          Value: true
+          Value: false
         hand_l_finger_tip_frame:
-          Value: true
+          Value: false
         hand_l_finger_vacuum_frame:
-          Value: true
+          Value: false
         hand_l_mimic_distal_link:
-          Value: true
+          Value: false
         hand_l_proximal_link:
-          Value: true
+          Value: false
         hand_l_spring_proximal_link:
-          Value: true
+          Value: false
         hand_motor_dummy_link:
-          Value: true
+          Value: false
         hand_palm_link:
-          Value: true
+          Value: false
         hand_r_distal_link:
-          Value: true
+          Value: false
         hand_r_finger_tip_frame:
-          Value: true
+          Value: false
         hand_r_mimic_distal_link:
-          Value: true
+          Value: false
         hand_r_proximal_link:
-          Value: true
+          Value: false
         hand_r_spring_proximal_link:
-          Value: true
+          Value: false
         head_center_camera_frame:
-          Value: true
+          Value: false
         head_center_camera_gazebo_frame:
-          Value: true
+          Value: false
         head_l_stereo_camera_gazebo_frame:
-          Value: true
+          Value: false
         head_l_stereo_camera_link:
-          Value: true
+          Value: false
         head_pan_link:
-          Value: true
+          Value: false
         head_r_stereo_camera_gazebo_frame:
-          Value: true
+          Value: false
         head_r_stereo_camera_link:
-          Value: true
+          Value: false
         head_rgbd_sensor_depth_frame:
-          Value: true
+          Value: false
         head_rgbd_sensor_gazebo_frame:
-          Value: true
+          Value: false
         head_rgbd_sensor_link:
-          Value: true
+          Value: false
         head_tilt_link:
-          Value: true
+          Value: false
         map:
           Value: true
         odom:
           Value: true
         torso_lift_link:
-          Value: true
+          Value: false
         wrist_flex_link:
-          Value: true
+          Value: false
         wrist_ft_sensor_frame:
-          Value: true
+          Value: false
         wrist_roll_link:
-          Value: true
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -227,22 +241,6 @@ Visualization Manager:
               {}
       Update Interval: 0
       Value: true
-    - Alpha: 1
-      Class: rviz/RobotModel
-      Collision Enabled: false
-      Enabled: true
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-      Name: RobotModel
-      Robot Description: robot_description
-      TF Prefix: ""
-      Update Interval: 0
-      Value: true
-      Visual Enabled: true
     - Class: Submaps
       Enabled: true
       Map frame: map
@@ -326,21 +324,21 @@ Visualization Manager:
         Value: false
       Name: Current View
       Near Clip Distance: 0.01
-      Scale: 38.9598
+      Scale: 10
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz)
-      X: 7.34091
-      Y: 4.54315
+      X: 0
+      Y: 0
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 709
+  Height: 1123
   Hide Left Dock: false
   Hide Right Dock: false
   Image:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000001c500000231fc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005300fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000360000018a000000b700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d00610067006501000001c6000000a10000001600ffffff000000010000010f00000231fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730100000036000002310000009b00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000006b40000003efc0100000002fb0000000800540069006d00650100000000000006b40000024600fffffffb0000000800540069006d00650100000000000004500000000000000000000003d40000023100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001c50000056cfc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003f000003d5000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d006100670065010000041a000001910000001600ffffff000000010000010f0000056cfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003f0000056c000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e1000001970000000300000a000000003efc0100000002fb0000000800540069006d0065010000000000000a000000025400fffffffb0000000800540069006d00650100000000000004500000000000000000000007200000056c00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -349,6 +347,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1716
-  X: 1720
-  Y: 14
+  Width: 1918
+  X: 0
+  Y: 24
