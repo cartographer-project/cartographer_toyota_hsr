@@ -72,9 +72,9 @@ use ``roslaunch`` to bring up the demo:
   .. code-block:: bash
 
     # Download the example bag.
-    wget -P ~/Downloads https://s3-us-west-1.amazonaws.com/cartographer-hsr/cartographer_hsr_example.bag
+    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/toyota_hsr/cartographer_toyota_hsr_demo.bag
 
     # Launch the demo.
-    roslaunch cartographer_toyota_hsr demo_hsr.launch bag_filename:=${HOME}/Downloads/cartographer_hsr_example.bag
+    roslaunch cartographer_toyota_hsr demo_hsr.launch bag_filename:=${HOME}/Downloads/cartographer_toyota_hsr_demo.bag
 
 The launch files will bring up ``roscore`` and ``rviz`` automatically.
