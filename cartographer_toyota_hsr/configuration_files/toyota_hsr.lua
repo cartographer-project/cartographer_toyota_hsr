@@ -16,10 +16,6 @@ include "map_builder.lua"
 
 options = {
   map_builder = MAP_BUILDER,
-  sensor_bridge = {
-    constant_odometry_translational_variance = 1e-7,
-    constant_odometry_rotational_variance = 1e-7,
-  },
   map_frame = "map",
   tracking_frame = "base_footprint",
   published_frame = "odom",
