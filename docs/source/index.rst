@@ -71,10 +71,16 @@ use ``roslaunch`` to bring up the demo:
 
   .. code-block:: bash
 
-    # Download the example bag.
+    # Download the 2D example bag.
     wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/toyota_hsr/cartographer_toyota_hsr_demo.bag
 
-    # Launch the demo.
-    roslaunch cartographer_toyota_hsr demo_hsr.launch bag_filename:=${HOME}/Downloads/cartographer_toyota_hsr_demo.bag
+    # Launch the 2D demo.
+    roslaunch cartographer_toyota_hsr demo_hsr_2d.launch bag_filename:=${HOME}/Downloads/cartographer_toyota_hsr_demo.bag
+
+    # Download the 3D example bag.
+    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/toyota_hsr/cartographer_toyota_hsr_demo_3d.bag
+
+    # Launch the 3D demo.
+    roslaunch cartographer_toyota_hsr demo_hsr_3d.launch bag_filename:=${HOME}/Downloads/cartographer_hsr_example_3d.bag
 
 The launch files will bring up ``roscore`` and ``rviz`` automatically.
