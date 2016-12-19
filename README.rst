@@ -16,7 +16,7 @@
 Cartographer ROS for the Toyota HSR
 ===================================
 
-|build| |docs|
+|build| |docs| |license|
 
 Purpose
 =======
@@ -56,3 +56,8 @@ support at `our Contribution page`_.
     :alt: Documentation Status
     :scale: 100%
     :target: https://google-cartographer-ros-for-the-toyota-hsr.readthedocs.io/en/latest/?badge=latest
+
+.. |license| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+     :alt: Apache 2 license.
+     :scale: 100%
+     :target: https://github.com/googlecartographer/cartographer_toyota_hsr/blob/master/LICENSE
