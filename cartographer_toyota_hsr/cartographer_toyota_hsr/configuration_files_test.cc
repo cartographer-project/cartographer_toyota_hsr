@@ -26,18 +26,24 @@
 namespace cartographer_ros {
 namespace {
 
-TEST(ConfigurationFilesTest, ValidateNodeOptions) {
+class ConfigurationFilesTest : public ::testing::TestWithParam<const char*> {};
+
+TEST_P(ConfigurationFilesTest, ValidateNodeOptions) {
   EXPECT_NO_FATAL_FAILURE({
     auto file_resolver = ::cartographer::common::make_unique<
         ::cartographer::common::ConfigurationFileResolver>(
         std::vector<string>{::ros::package::getPath("cartographer_toyota_hsr") +
                             "/configuration_files"});
-    const string code = file_resolver->GetFileContentOrDie("toyota_hsr.lua");
+    const string code = file_resolver->GetFileContentOrDie(GetParam());
     ::cartographer::common::LuaParameterDictionary lua_parameter_dictionary(
         code, std::move(file_resolver));
     ::cartographer_ros::CreateNodeOptions(&lua_parameter_dictionary);
   });
 }
+
+INSTANTIATE_TEST_CASE_P(ValidateAllNodeOptions, ConfigurationFilesTest,
+                        ::testing::Values("toyota_hsr_2d.lua",
+                                          "toyota_hsr_3d.lua"));
 
 }  // namespace
 }  // namespace cartographer_ros

@@ -36,4 +36,6 @@
   <depend>message_runtime</depend>
   <depend>roscpp</depend>
   <depend>roslib</depend>
+
+  <test_depend>rosunit</test_depend>
 </package>
