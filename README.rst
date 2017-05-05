@@ -34,8 +34,8 @@ HSR`_ via `Cartographer ROS`_.
 Documentation
 =============
 
-You will find complete documentation for using Cartographer with ROS at `our
-Read the Docs site`_.
+You will find complete documentation for using Cartographer ROS with the Toyota
+HSR at `our Read the Docs site`_.
 
 .. _our Read the Docs site: https://google-cartographer-ros-for-the-toyota-hsr.readthedocs.io/
 
