@@ -40,9 +40,6 @@ MAP_BUILDER.sparse_pose_graph.optimization_problem.huber_scale = 5e2
 MAP_BUILDER.sparse_pose_graph.optimize_every_n_scans = 320
 MAP_BUILDER.sparse_pose_graph.constraint_builder.sampling_ratio = 0.03
 MAP_BUILDER.sparse_pose_graph.optimization_problem.ceres_solver_options.max_num_iterations = 10
--- Reuse the coarser 3D voxel filter to speed up the computation of loop closure
--- constraints.
-MAP_BUILDER.sparse_pose_graph.constraint_builder.adaptive_voxel_filter = TRAJECTORY_BUILDER_3D.high_resolution_adaptive_voxel_filter
 MAP_BUILDER.sparse_pose_graph.constraint_builder.min_score = 0.62
 
 return options
