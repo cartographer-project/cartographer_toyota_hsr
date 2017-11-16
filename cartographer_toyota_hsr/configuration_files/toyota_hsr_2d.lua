@@ -45,6 +45,6 @@ TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
 TRAJECTORY_BUILDER_2D.use_imu_data = false  -- TODO(macmason): Enable the IMU.
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
 
-SPARSE_POSE_GRAPH.optimization_problem.huber_scale = 1e2
+POSE_GRAPH.optimization_problem.huber_scale = 1e2
 
 return options
